@@ -21,13 +21,13 @@ const Hero = () => {
       </div>
 
       {/* grid start */}
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.3] flex items-center justify-center absolute top-0 left-0">
+      {/* <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.03] bg-grid-black/[0.3] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      </div>
+      </div> */}
       {/* grid end */}
 
       <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center z-10">
           {/* <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             another slogan right here
           </h2> */}
@@ -46,11 +46,12 @@ const Hero = () => {
               title="Lets Collaborate!"
               icon={<FaLocationArrow />}
               position="right"
+              otherClasses="z-20"
             />
           </a>
-          <GlobeDemo />
         </div>
       </div>
+      <GlobeDemo />
     </div>
   );
 };
