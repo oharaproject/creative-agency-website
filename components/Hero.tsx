@@ -7,7 +7,7 @@ import { GlobeDemo } from "./ui/GridGlobe";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 text-white">
+    <div className="pb-20 pt-36  text-white">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -38,7 +38,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Make Something Different
+            Where Creativity Meets Purpose
           </p>
 
           <a href="#about">
