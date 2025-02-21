@@ -10,7 +10,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-white-100 px-5 sm:px-10 z-10">
+      <div className="w-full bg-white-100 px-2 sm:px-4 z-10">
         <div className="max-w-7xl w-full mx-auto">
           <HybriddAcademy />
         </div>
