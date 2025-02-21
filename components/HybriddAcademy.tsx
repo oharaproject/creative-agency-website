@@ -2,6 +2,7 @@ import React from "react";
 import { CardContainer, CardBody, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 import { classes } from "@/contants";
+import Globe from "./Globe";
 
 const HybriddAcademy = () => {
   return (
@@ -62,6 +63,8 @@ const HybriddAcademy = () => {
           ))}
         </div>
       </div>
+
+      <Globe />
     </div>
   );
 };
