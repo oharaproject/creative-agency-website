@@ -3,7 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
-import { GlobeDemo } from "./ui/GridGlobe";
+// import { GlobeDemo } from "./ui/GridGlobe";
 
 const Hero = () => {
   return (
@@ -51,7 +51,7 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <GlobeDemo />
+      {/* <GlobeDemo /> */}
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { Navbar, Hero, HybriddAcademy } from "@/components";
 export default function Home() {
   return (
     <main className="flex flex-col relative justify-center items-center mx-auto overflow-hidden">
-      <div className="w-full bg-black-100 px-5 sm:px-10 ">
+      <div className="w-full bg-black-100 px-2 sm:px-4 ">
         <div className="max-w-7xl w-full mx-auto">
           <Navbar />
           <Hero />
