@@ -17,7 +17,7 @@ export const classes = [
   },
   {
     id: 2,
-    title: "Kelas Pemrograman Web",
+    title: "Kelas Pemrograman",
     description: "Belajar membuat website dari dasar hingga mahir.",
     price: 75000,
     image: "/graphicdesign.jpg",

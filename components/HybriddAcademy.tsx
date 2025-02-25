@@ -120,7 +120,7 @@ const HybriddAcademy = () => {
                 flex-[0_0_calc(100%-16px)]    // Full width mobile
                 sm:flex-[0_0_calc(50%-20px)]  // 2 columns tablet
                 lg:flex-[0_0_calc(25%-24px)]  // 4 columns desktop
-                mx-2 min-w-0
+                mx-[5px] min-w-0
               "
             >
               <CardContainer className="w-full h-full">
