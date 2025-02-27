@@ -127,7 +127,7 @@ const ListofBands = () => {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
+      <ul className="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start gap-4">
         {cards.map((card, index) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
@@ -204,24 +204,21 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "/graphicdesign.jpg",
+    description: "Ba Puasa",
+    title: "Exsacta",
+    src: "/exsacta.jpg",
     ctaText: "Visit",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://open.spotify.com/artist/1QrsIpHcNhMAY8HGhzQiui",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolore
+          exercitationem voluptatibus? Veritatis adipisci, ratione nesciunt ea
+          commodi est laudantium, animi, quasi voluptas rerum veniam perferendis
+          non consequuntur id placeat. <br /> <br /> Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Atque enim rem eaque dicta, laudantium
+          minus dolor quos, quisquam eius accusantium labore ad assumenda
+          veritatis iste quis deserunt earum suscipit beatae..
         </p>
       );
     },
