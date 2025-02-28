@@ -1,4 +1,10 @@
-import { Navbar, Hero, HybriddAcd, HybriddEnt } from "@/components";
+import {
+  Navbar,
+  Hero,
+  HybriddAcd,
+  HybriddEnt,
+  HybriddEvent,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -19,6 +25,12 @@ export default function Home() {
       <div className="w-full bg-black-200 px-2 sm:px-4 z-10">
         <div className="max-w-7xl w-full mx-auto">
           <HybriddEnt />
+        </div>
+      </div>
+
+      <div className="w-full bg-white px-2 sm:px-4 z-10">
+        <div className="max-w-7xl w-full mx-auto">
+          <HybriddEvent />
         </div>
       </div>
     </main>

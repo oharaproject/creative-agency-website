@@ -28,7 +28,9 @@ const ListofBands = () => {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
-  useOutsideClick(ref, () => setActive(null));
+  useOutsideClick(ref as React.RefObject<HTMLDivElement>, () =>
+    setActive(null)
+  );
   return (
     <>
       <AnimatePresence>
@@ -128,7 +130,7 @@ const ListofBands = () => {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-7xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-start gap-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
