@@ -1,11 +1,20 @@
 "use client";
 import { LayoutGrid } from "./ui/LayoutGrid";
+import Image from "next/image";
 
 const HybriddEvent = () => {
   return (
-    <div className="h-screen px-2 sm:px-4 w-full">
-      <LayoutGrid cards={eventDocumentations} />
-    </div>
+    <>
+      <div className="px-2 sm:px-4">
+        <div>
+          <Image src="/heo.png" alt="heo-logo" width={100} height={200} />
+        </div>
+
+        <div className="h-screen  w-full">
+          <LayoutGrid cards={eventDocumentations} />
+        </div>
+      </div>
+    </>
   );
 };
 
