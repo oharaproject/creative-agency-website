@@ -5,9 +5,17 @@ import Image from "next/image";
 const HybriddEvent = () => {
   return (
     <>
-      <div className="px-2 sm:px-4">
-        <div>
-          <Image src="/heo.png" alt="heo-logo" width={100} height={200} />
+      <div className="px-2 sm:px-4 py-8">
+        <div className=" flex justify-between mb-6">
+          <div className="font-semibold text-4xl">
+            <h1 className="text-black-100 font-bold items-center w-[600px] h-auto">
+              Here&apos;s Some Of Our Projects, created for our beloved clients.
+            </h1>
+          </div>
+
+          <div className="flex items-center">
+            <Image src="/heo.png" alt="heo-logo" width={100} height={200} />
+          </div>
         </div>
 
         <div className="h-screen  w-full">

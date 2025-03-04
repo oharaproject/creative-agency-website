@@ -1,3 +1,5 @@
+import React from "react";
+import Image from "next/image";
 import {
   Navbar,
   Hero,
@@ -36,6 +38,24 @@ export default function Home() {
         <div className="w-full bg-white px-2 sm:px-4 z-10">
           <div className="max-w-7xl w-full mx-auto">
             <HybriddEvent />
+          </div>
+        </div>
+
+        <div className="relative w-full bg-black-200 px-2 sm:px-4 z-10 min-h-screen">
+          <div className="absolute top-0 left-0 w-full h-full z-0">
+            <Image
+              src="/hybridd-pattern-design.svg"
+              alt="Hybridd Indonesia Background"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+            />
+          </div>
+
+          <div className="relative z-10 px-2 sm:px-4">
+            <div className="max-w-7xl mx-auto">
+              <HybriddInd />
+            </div>
           </div>
         </div>
       </div>
