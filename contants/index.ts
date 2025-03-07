@@ -79,3 +79,46 @@ export const classes = [
     image: "/graphicdesign.jpg",
   },
 ];
+
+export const businesses = [
+  {
+    id: 1,
+    src: "/hybriddacd-white.svg",
+    alt: "hybridd-academy",
+  },
+  {
+    id: 2,
+    src: "/hybriddent-white.svg",
+    alt: "hybridd-entertainment",
+  },
+  {
+    id: 3,
+    src: "/heo-white.svg",
+    alt: "hybridd-event",
+  },
+  {
+    id: 4,
+    src: "/hybriddind-white.svg",
+    alt: "hybridd-indonesia",
+  },
+  {
+    id: 5,
+    src: "/hybriddprod-white.svg",
+    alt: "hybridd-productions",
+  },
+  {
+    id: 6,
+    src: "/hybriddprop-white.svg",
+    alt: "hybridd-property",
+  },
+  {
+    id: 7,
+    src: "/carya-white.svg",
+    alt: "carya",
+  },
+  {
+    id: 8,
+    src: "/loca-white.svg",
+    alt: "loca",
+  },
+];

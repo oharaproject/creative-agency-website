@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative overflow-hidden">
       <div className="fixed w-full top-0 left-0 z-[9999]">
         <Navbar />
       </div>

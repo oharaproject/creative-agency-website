@@ -3,11 +3,13 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import { businesses } from "@/contants";
+import Image from "next/image";
 // import { GlobeDemo } from "./ui/GridGlobe";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36  text-white">
+    <div className="pb-20 pt-36 h-screen text-white">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -51,6 +53,24 @@ const Hero = () => {
           </a>
         </div>
       </div>
+
+      <div className="flex justify-center items-center space-x-10 ">
+        {businesses.map((business) => (
+          <div
+            key={business.id}
+            className="h-[48px] w-[70px] relative hover:scale-105 hover:cursor-pointer transition-transform duration-300"
+          >
+            <Image
+              src={business.src}
+              alt={business.alt}
+              fill
+              sizes="100vw"
+              className="object-contain"
+            />
+          </div>
+        ))}
+      </div>
+
       {/* <GlobeDemo /> */}
     </div>
   );
