@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col relative mx-auto">
-        <div className="w-full bg-black-100 px-2 sm:px-4 pt-20">
+        <div className="w-full px-2 sm:px-4 pt-20">
           <div className="max-w-7xl w-full mx-auto">
             <Hero />
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full bg-black-200 px-2 sm:px-4 z-10">
+        <div className="w-full bg-black-200 px-2 sm:px-4 z-50">
           <div className="max-w-7xl w-full mx-auto">
             <HybriddEnt />
           </div>

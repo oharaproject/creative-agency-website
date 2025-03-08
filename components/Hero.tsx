@@ -5,12 +5,25 @@ import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { businesses } from "@/contants";
 import Image from "next/image";
+import Globe from "./Globe";
 // import { GlobeDemo } from "./ui/GridGlobe";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 h-screen text-white">
-      <div>
+    <div className="pb-20 pt-36 text-white h-auto overflow-hidden">
+      {/* GLOBE */}
+      <div className="absolute inset-0 z-0 h-3/4 w-full">
+        <div className="relative h-full w-full scale-[80%] -translate-y-[6.5%] md:scale-[200%] md:translate-y-[50%] lg:translate-y-[78%] lg:scale-[200%] xl:translate-y-[76%] xl:scale-[250%] 2xl:translate-y-[73%] 2xl:scale-[250%] ">
+          <Globe />
+        </div>
+      </div>
+
+      {/* OVERLAY */}
+      <div className="absolute inset-0 z-10 w-full bg-black-100/60"></div>
+      {/* 
+
+      {/* SPOTLIGHT */}
+      <div className="">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -35,7 +48,7 @@ const Hero = () => {
           </h2> */}
 
           <TextGenerateEffect
-            className="uppercase text-center text-[30px] md:text-5xl lg:text-6xl"
+            className="uppercase text-center text-[30px] md:text-5xl lg:text-6xl "
             words="hybridd group"
           />
 
@@ -54,23 +67,29 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center space-x-10 ">
-        {businesses.map((business) => (
-          <div
-            key={business.id}
-            className="h-[48px] w-[70px] relative hover:scale-105 hover:cursor-pointer transition-transform duration-300"
-          >
-            <Image
-              src={business.src}
-              alt={business.alt}
-              fill
-              sizes="100vw"
-              className="object-contain"
-            />
-          </div>
-        ))}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex flex-wrap justify-center items-center gap-3 xs:gap-4 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
+          {businesses.map((business) => (
+            <div
+              key={business.id}
+              className="hidden md:block relative aspect-[1.67] hover:scale-105 transition-transform duration-300 z-20"
+              style={{
+                width: "clamp(80px, 15vw, 112px)",
+                height: "clamp(48px, calc(15vw * 0.6), 67px)",
+              }}
+            >
+              <Image
+                src={business.src}
+                alt={business.alt}
+                fill
+                sizes="(min-width: 768px) 15vw, (min-width: 1024px) 12vw, (min-width: 1280px) 10vw"
+                className="object-contain p-1.5"
+                quality={100}
+              />
+            </div>
+          ))}
+        </div>
       </div>
-
       {/* <GlobeDemo /> */}
     </div>
   );

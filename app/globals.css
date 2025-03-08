@@ -95,3 +95,14 @@
 .overflow-visible {
   overflow: visible;
 }
+
+.globe-container {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+.globe-container canvas {
+  display: block;
+  mix-blend-mode: multiply;
+}
